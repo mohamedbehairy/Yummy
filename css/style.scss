@@ -1,0 +1,41 @@
+$black_0d0d0d: #0d0d0d;
+
+:root {
+  --accent-color: $black_0d0d0d;
+}
+
+body {
+  background-color: var(--accent-color);
+}
+
+.side-navbar {
+  background-color: var(--accent-color);
+  left: -300px;
+  z-index: 999;
+}
+
+.white-area {
+  width: 3.75rem;
+
+  i {
+    color: var(--accent-color);
+  }
+}
+
+.black-area {
+  background-color: var(--accent-color);
+  font-size: .9rem;
+  width: 15rem;
+}
+
+li {
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+
+.yummy-img {
+  width: 3rem;
+}

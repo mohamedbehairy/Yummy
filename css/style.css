@@ -1,0 +1,110 @@
+* {
+}
+:root {
+  --accent-color: #0d0d0d;
+}
+body {
+  background-color: burlywood;
+  background-color: var(--accent-color);
+  padding-left: 3.75rem; /*& For ".white-area" */
+}
+.loading-screen {
+  z-index: 999;
+  display: flex;
+}
+.inner-loading-screen {
+  position: absolute;
+  z-index: 99;
+  background-color: var(--accent-color);
+  display: flex;
+}
+.side-navbar {
+  background-color: var(--accent-color);
+  left: -15rem; /*& To Hide blackArea*/
+  z-index: 998;
+}
+
+.white-area {
+  width: 3.75rem;
+}
+.white-area i {
+  color: var(--accent-color);
+}
+
+.black-area {
+  width: 15rem;
+  background-color: var(--accent-color);
+  font-size: 0.9rem;
+}
+.side-navbar li,
+.side-navbar i {
+  cursor: pointer;
+}
+.ul-animate li {
+  /* top: 100%; */
+  position: relative;
+  top: 100%;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.ul-animate li:hover {
+  color: #ffcc11;
+}
+.yummy-img {
+  width: 3rem;
+}
+.meal {
+  cursor: pointer;
+}
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #000000c3;
+  top: 100%;
+  transition: 0.5s;
+  /* text-align: left; */
+}
+.meal-layer h4 {
+}
+
+.meal:hover .meal-layer {
+  top: 0;
+}
+.category {
+  /* min-height: 14rem; */
+}
+.category-layer {
+  width: 100%;
+  height: 100%;
+  /* background-color: #000000c3; */
+  top: 100%;
+  transition: all 0.5s;
+}
+.category-layer h5 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3%;
+}
+.category-layer p {
+  position: absolute;
+  left: 0%;
+  top: 23%;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+}
+img.meal-layer,
+img.category-layer {
+  object-fit: contain;
+}
+.meal:hover .category-layer {
+  background-color: #000000c3;
+  top: 0;
+}
+.area-card,
+.ingredient-card {
+  cursor: pointer;
+}
+.ingredient-card p {
+  font-size: 0.85rem;
+}
